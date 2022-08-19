@@ -2844,11 +2844,21 @@ break
                 GojoMdNx.sendMessage(m.chat, { video: { url: anu.data[0] } }, { quoted: m })
             }
             break
+		
+		case 'sexvideo': case 'xxx': case 'xnxx': case 'xxx2': {
+                if (!text) return reply(`Enter Query Link!`)
+                reply(mess.wait)
+                
+                let anu = await fetchJson(api('zenz', '/downloader/mediafire', { url:text }, 'apikey'))
+                GojoMdNx.sendMessage(m.chat, { video: { url: anu.data[0] } }, { quoted: m })
+            }
+            break
+		
             case 'joox': case 'jooxdl': {
                 if (!text) return reply(`No Query Title`)
                 reply(mess.wait)
                 let anu = await fetchJson(api('zenz', '/downloader/joox', { query: text }, 'apikey'))
-                let msg = await GojoMdNx.sendImage(m.chat, anu.result.img, `🐦 Title : ${anu.result.lagu}\n🐦 Album : ${anu.result.album}\n🐦 Singer : ${anu.result.penyanyi}\n🐦 Publish : ${anu.result.publish}\n🐦 Lyrics :\n${anu.result.lirik.result}`, m)
+                let msg = await GojoMdNx.sendImage(m.chat, anu.result.img, `🐬 Title : ${anu.result.lagu}\n🛎️ Album : ${anu.result.album}\n👍 Singer : ${anu.result.penyanyi}\n📗 Publish : ${anu.result.publish}\n📕 Lyrics :\n${anu.result.lirik.result}`, m)
                 GojoMdNx.sendMessage(m.chat, { audio: { url: anu.result.mp4aLink }, mimetype: 'audio/mpeg', fileName: anu.result.lagu+'.m4a' }, { quoted: msg })
             }
             break
@@ -2856,10 +2866,12 @@ break
                 if (!text) return reply(`No Query Title`)
                 reply(mess.wait)
                 let anu = await fetchJson(api('zenz', '/downloader/soundcloud', { url: isUrl(text)[0] }, 'apikey'))
-                let msg = await GojoMdNx.sendImage(m.chat, anu.result.thumb, `🐦 Title : ${anu.result.title}\n🐦 Url : ${isUrl(text)[0]}`)
+                let msg = await GojoMdNx.sendImage(m.chat, anu.result.img, `🐬 Title : ${anu.result.title}\n🛎️ Url : ${isUrl(text)[0]}`)
                 GojoMdNx.sendMessage(m.chat, { audio: { url: anu.result.url }, mimetype: 'audio/mpeg', fileName: anu.result.title+'.m4a' }, { quoted: msg })
             }
-            break
+         break
+	
+           
 	        case 'twitdlx': case 'twitterx': {
                 if (!text) return reply(`Enter Query Link!`)
                 reply(mess.wait)
