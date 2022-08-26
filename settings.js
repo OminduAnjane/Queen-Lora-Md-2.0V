@@ -20,8 +20,8 @@ global.APIKeys = {
 
 //customize settings\\
 global.owner = ['94760510568']
-global.premium = ['94707104949']
-global.ownernomer = '94707104949'
+global.premium = ['+94714689365']
+global.ownernomer = '+94714689365'
 global.ownername = 'Omindu Anjana'
 global.botname = 'Queen Lora Md 2.0v'
 global.footer = '👸Queen Lora Md'
