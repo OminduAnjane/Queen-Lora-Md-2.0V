@@ -19,11 +19,11 @@ global.APIKeys = {
 }
 
 //customize settings\\
-global.owner = ['94760510568']
-global.premium = ['+94714689365']
-global.ownernomer = '+94714689365'
-global.ownername = 'Omindu Anjana'
-global.botname = 'Queen Lora Md 2.0v'
+global.owner = ['+94714689365']
+global.premium = ['+94760510568']
+global.ownernomer = '+94760510568'
+global.ownername = 'Lakidu Sasanga'
+global.botname = 'Queen Lora Md'
 global.footer = '👸Queen Lora Md'
 global.mywa = 'https://wa.me/94760510568'
 global.myschool = 'Mo/Nishshanka National School'
@@ -45,9 +45,9 @@ global.mess = {
     group: 'මේ Feature වැඩකරන්නේ group එකට විතරයි',
     private: 'මේ Features private chat කරන්න විතරයි!',
     bot: 'මේ Feature වැඩකරන්නේ bot ට පමණි.',
-    wait: '🔂පොඩ්ඩක් වෙලා ඉන්න...',
+    wait: '🔃පොඩ්ඩක් වෙලා ඉන්න...',
     error: 'Error! එකක් ඔයාගේ Api එක කල්ඉකුත් වී ඇත. 🤔!',
-    endLimit: 'අද දවසේ බොට් පාවිච්චී කිරිමේ කාලය කල්ඉකුත් වී ඇත., The Limit Will Be Reset Every 12 Hours',
+    endLimit: '📃අද දවසේ බොට් පාවිච්චී කිරිමේ කාලය කල්ඉකුත් වී ඇත., The Limit Will Be Reset Every 12 Hours',
 }
     global.limitawal = {
     premium: "Infinity",
