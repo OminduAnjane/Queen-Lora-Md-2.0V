@@ -2844,15 +2844,8 @@ break
                 GojoMdNx.sendMessage(m.chat, { video: { url: anu.data[0] } }, { quoted: m })
             }
             break
+
 		
-		case 'sexvideo': case 'xxx': case 'xnxx': case 'xxx2': {
-                if (!text) return reply(`Enter Query Link!`)
-                reply(mess.wait)
-                
-                let anu = await fetchJson(api('zenz', '/downloader/mediafire', { url:text }, 'apikey'))
-                GojoMdNx.sendMessage(m.chat, { video: { url: anu.data[0] } }, { quoted: m })
-            }
-            break
 		
             case 'joox': case 'jooxdl': {
                 if (!text) return reply(`No Query Title`)
